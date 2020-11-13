@@ -9,6 +9,7 @@ const MainHeader = () => {
         fluid 
         id="intro">
             <Container className="text-center my-auto">
+                
                 <h1 className="header-title">Creative Misgivings</h1>
                 <p className="header-text">
                 Hello, I am a placeholder for Anila Schneider's portfolio page!
