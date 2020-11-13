@@ -3,7 +3,7 @@ import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 
 const MainNav = () => {
     return(
-    <Navbar bg="light" expand="lg">
+    <Navbar id="main-nav" className="navbar-dark" expand="lg" fixed="top">
     <Navbar.Brand href="#home">Creative Misgivings</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">

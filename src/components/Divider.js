@@ -5,16 +5,14 @@ const Divider = () => {
 
         <div className="row justify-content-center align-items-center mx-0">
         <div className="col-md-4 text-center text-dark">
-            <h2>I am a divider!</h2>
+            <h2>Quote of the day</h2>
         </div>
         <div className="col-8 col-md-4 text-dark">
             <p>
-            Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. 
+            The world is indeed comic, but the joke is on mankind.
             </p>
-            {/* Possibly include large-text declarations of skills here */}
+            <span>- H.P. Lovecraft</span>
+            {/* This will be based on a random quote generator API which will either daily, or on page load, pick a quote. */}
         </div>
         </div>
 
