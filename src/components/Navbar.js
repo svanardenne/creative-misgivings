@@ -1,27 +1,26 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import './Navbar.css'
 
 const MainNav = () => {
     return(
-    <Navbar id="main-nav" className="navbar-dark" expand="lg" fixed="top">
-    <Navbar.Brand href="#home">Creative Misgivings</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <NavDropdown title="Writing" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Fiction</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Freelance</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#link">Doodles</Nav.Link>
-            <Nav.Link href="#link">Quotes</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
-            <Nav.Link href="#link">Contact</Nav.Link>
-            {/* Put social media links in navbar? */}
-            
-        </Nav>
-    </Navbar.Collapse>
-    </Navbar>
+        <div className="nav-container">
+            <div className="main-nav">
+                <h3 className="nav-title">Creative Misgivings</h3>
+                <div className="nav-toggle">
+                    <h1>^</h1>
+                </div>
+            </div>
+            <div className="dropdown">
+                <ul className="dropdown-list">
+                    <li><a className="nav-link" href="#home">Home</a></li>
+                    <li><a className="nav-link" href="#Writing">Writing</a></li>
+                    <li><a className="nav-link" href="#Doodles">Doodles</a></li>
+                    <li><a className="nav-link" href="#Quotes">Quotes</a></li>
+                    <li><a className="nav-link" href="#About">About</a></li>
+                    <li><a className="nav-link" href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     );
 }
 

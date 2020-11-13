@@ -1,0 +1,14 @@
+.jumbotron {
+    color: white;
+    text-align: center;
+    height: 400px;
+    background-image: url(../img/book-stack-jan-mellstrom-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}

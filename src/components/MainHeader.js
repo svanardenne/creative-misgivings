@@ -1,26 +1,16 @@
 import React from 'react';
-import {Jumbotron, Container, Button} from 'react-bootstrap';
+import './MainHeader.css'
 
 const MainHeader = () => {
     return(
-
-        <Jumbotron 
-        className="p-0 text-white m-0 bg-success" 
-        fluid 
-        id="intro">
-            <Container className="text-center my-auto">
-                
-                <h1 className="header-title">Creative Misgivings</h1>
-                <p className="header-text">
-                Hello, I am a placeholder for Anila Schneider's portfolio page!
+        <div className="jumbotron">
+            <div className="headline">
+                <h1>Hello!</h1>
+                <p>
+                    I'm a placeholder for more text which will describe the person behind the site.
                 </p>
-                <div className="header-button">
-                    {/* Place a button here which sends the user out of the Jumbotron */}
-                    <Button variant="primary">Down Arrow</Button>
-                </div>
-            </Container>
-        </Jumbotron>
-
+            </div>
+        </div>
     );
 }
 
