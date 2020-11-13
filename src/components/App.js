@@ -47,20 +47,18 @@ class App extends Component {
         dropdown.style.display = '';
       }
     });
-  }
 
-  // componentDidMount() {
-  //   document.addEventListener('scroll', () => {
-  //     const navbar = document.getElementById('main-nav');
-  //     if (window.pageYOffset > 0) {
-  //       navbar.classList.add("navbar-light", "bg-light");
-  //       navbar.classList.remove("navbar-dark");
-  //     } else if (window.pageYOffset === 0) {
-  //       navbar.classList.add("navbar-dark");
-  //       navbar.classList.remove("navbar-light", "bg-light");
-  //     }
-  //   });
-  // }
+    document.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.main-nav');
+      if (window.pageYOffset > 0) {
+        navbar.classList.add("navbar-light", "bg-light");
+        navbar.classList.remove("navbar-dark");
+      } else if (window.pageYOffset === 0) {
+        navbar.classList.add("navbar-dark");
+        navbar.classList.remove("navbar-light", "bg-light");
+      }
+    });
+  }
 }
 
 export default App;
