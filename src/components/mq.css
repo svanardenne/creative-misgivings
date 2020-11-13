@@ -1,0 +1,11 @@
+@media(min-width: 1024px) {
+    .nav-toggle {
+        display: none;
+    }
+    .desktop-nav {
+        display: inline-block !important;
+    }
+    .main-nav {
+        display: inline-block !important;
+    }
+}
