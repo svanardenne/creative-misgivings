@@ -1,5 +1,4 @@
 import React from 'react';
-import "./QuoteDiv.css"
 
 const QuoteDiv = () => {
     return(

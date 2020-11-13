@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
-import './mq.css';
+import './styles/App.scss';
 import MainNav from './Navbar';
 import MainHeader from './MainHeader';
 import QuoteDiv from './QuoteDiv';
