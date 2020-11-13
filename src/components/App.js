@@ -36,6 +36,11 @@ class App extends Component {
     );
   }
 
+  /* ============================================= */
+  /*               Scripts on Mount                */
+  /* ============================================= */
+
+  //Toggles dropdown menu on navbar
   componentDidMount() {
     const dropdown = document.querySelector('.dropdown');
     const navToggle = document.querySelector('.nav-toggle');
@@ -47,14 +52,29 @@ class App extends Component {
       }
     });
 
+    //Toggles navbar style on scroll
     document.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.main-nav');
+      const navbar = document.querySelector('.nav-container');
+      const mobileLinks = document.getElementsByClassName('nav-link');
+      const desktopLinks = document.getElementsByClassName('desktop-nav-link');
       if (window.pageYOffset > 0) {
-        navbar.classList.add("navbar-light", "bg-light");
-        navbar.classList.remove("navbar-dark");
+        navbar.style.backgroundColor = 'white';
+        navbar.style.color = 'black';
+        for (let i = 0; i < mobileLinks.length; i++) {
+          mobileLinks[i].style.color = 'black';
+        }
+        for (let i = 0; i < desktopLinks.length; i++) {
+          desktopLinks[i].style.color = 'black';
+        }
       } else if (window.pageYOffset === 0) {
-        navbar.classList.add("navbar-dark");
-        navbar.classList.remove("navbar-light", "bg-light");
+        navbar.style.backgroundColor = '';
+        navbar.style.color = 'white';
+        for (let i = 0; i < mobileLinks.length; i++) {
+          mobileLinks[i].style.color = 'white';
+        }
+        for (let i = 0; i < desktopLinks.length; i++) {
+          desktopLinks[i].style.color = 'white';
+        }
       }
     });
   }
