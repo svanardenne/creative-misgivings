@@ -1,19 +1,16 @@
 @media(min-width: 768px) {
     #content {
-        display: grid;
-        grid-template-columns: 500px, repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    #journal {
-        grid-column: 1 / span 1;
-    }
+    #journal,
     #upcoming {
-        grid-column: 2 / span 1;
+        flex-basis: 45%;
     }
-    #newContent {
-        grid-column: 1 / span 2;
-        grid-row: 2 / span 1;
+    #new-content {
+        flex-basis: 100%;
     }
 }
 
@@ -26,5 +23,10 @@
     }
     .main-nav {
         display: inline-block !important;
+    }
+    #journal,
+    #upcoming,
+    #new-content {
+        flex-basis: 33%;
     }
 }

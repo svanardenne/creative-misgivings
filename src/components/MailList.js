@@ -6,7 +6,7 @@ const MailList = () => {
         <div id="mail-list">
             <form>
                 <label for=""></label>
-                <input></input>
+                <input id="email"></input>
             </form>
         </div>
     );
