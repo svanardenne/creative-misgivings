@@ -6,6 +6,7 @@ import QuoteDiv from './QuoteDiv';
 import Journal from './Journal';
 import Upcoming from './Upcoming';
 import New from './New';
+import Contact from './Contact'
 
 class App extends Component {
 
@@ -16,11 +17,11 @@ class App extends Component {
           <MainNav />
           <MainHeader />
         </header>
-        <main className="container-fluid">
-          <section id="quote-div" className="container-fluid">
+        <main>
+          <section id="quote-div">
             <QuoteDiv />
           </section>
-          <section id="content" className="container-fluid">
+          <section id="content">
             <Journal />
             <Upcoming />
             <New />
@@ -30,7 +31,7 @@ class App extends Component {
           </section>
         </main>
         <footer id="contact-info">
-
+          <Contact />
         </footer>
       </div>
     );
