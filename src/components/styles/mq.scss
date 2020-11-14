@@ -1,6 +1,19 @@
 @media(min-width: 768px) {
     #content {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 500px, repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+    }
+    #journal {
+        grid-column: 1 / span 1;
+    }
+    #upcoming {
+        grid-column: 2 / span 1;
+    }
+    #newContent {
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 1;
     }
 }
 
