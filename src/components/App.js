@@ -57,6 +57,7 @@ class App extends Component {
     document.addEventListener('scroll', () => {
       const navbar = document.querySelector('.nav-container');
       const mobileLinks = document.getElementsByClassName('nav-link');
+      const desktopNavItems = document.getElementsByClassName('nav-item');
       const desktopLinks = document.getElementsByClassName('desktop-nav-link');
       if (window.pageYOffset > 0) {
         navbar.style.backgroundColor = 'white';
@@ -66,6 +67,7 @@ class App extends Component {
         }
         for (let i = 0; i < desktopLinks.length; i++) {
           desktopLinks[i].style.color = 'black';
+          desktopNavItems[i].style.borderLeftColor = "black";
         }
       } else if (window.pageYOffset === 0) {
         navbar.style.backgroundColor = '';
@@ -75,6 +77,7 @@ class App extends Component {
         }
         for (let i = 0; i < desktopLinks.length; i++) {
           desktopLinks[i].style.color = 'white';
+          desktopNavItems[i].style.borderLeftColor = "white";
         }
       }
     });

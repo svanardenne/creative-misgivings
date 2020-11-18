@@ -1,4 +1,13 @@
 @media(min-width: 768px) {
+    .nav-title {
+        margin: 0 auto;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .desktop-nav {
+        display: block;
+    }
     #content {
         display: flex;
         flex-direction: row;
@@ -15,14 +24,24 @@
 }
 
 @media(min-width: 1024px) {
-    .nav-toggle {
-        display: none;
-    }
-    .desktop-nav {
-        display: inline-block !important;
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
     }
     .main-nav {
-        display: inline-block !important;
+        height: auto;
+    }
+    .nav-title {
+        margin-left: 0;
+    }
+    .desktop-nav {
+
+        flex-basis: 80%;
+    }
+    .desktop-nav-list li {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
     #journal,
     #upcoming,
