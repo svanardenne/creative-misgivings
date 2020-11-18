@@ -1,3 +1,5 @@
+@import 'variables';
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -7,14 +9,17 @@ html {
 }
 
 body {
-    background-color: #1d130f;
-    color: #3e3e3e;
+    background-color: $secondary;
+    color: $light-text;
 }
 
 #root {
     background-color: white;
     margin: 0 auto;
     min-height: 100vh;
+    max-width: 1440px;
+    box-shadow: 1px 1px 40px 1px black;
+    margin-bottom: 50px;
 }
 
 a {

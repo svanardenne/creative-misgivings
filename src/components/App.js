@@ -81,10 +81,6 @@ class App extends Component {
         }
       }
     });
-    const downArrow = document.querySelector(".down-arrow");
-    downArrow.addEventListener('click', () => {
-      downArrow.scrollIntoView();
-    });
   }
 }
 
