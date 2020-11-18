@@ -4,7 +4,7 @@
 
 #journal {
     border: 2px solid black;
-    background-color: gray;
+    background-color: #F8ECC2;
 }
 
 .content-container {
@@ -12,4 +12,17 @@
     h3 {
         margin: 0;
     }
+}
+.journal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        font-family: 'Indie Flower', cursive;
+    }
+}
+.journal-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Indie Flower', cursive;
 }

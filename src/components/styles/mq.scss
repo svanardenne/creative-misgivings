@@ -24,6 +24,14 @@
 }
 
 @media(min-width: 1024px) {
+    .jumbotron {
+        h1 {
+            font-size: 4em;
+        }
+        p {
+            font-size: 2em;
+        }
+    }
     .nav-container {
         display: flex;
         justify-content: space-between;

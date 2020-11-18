@@ -9,7 +9,21 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 5px;
+    h1 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+.down-arrow {
+    position: absolute;
+    bottom: 0;
+    span {
+        font-size: 4em;
+    }
 }

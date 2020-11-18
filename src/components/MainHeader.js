@@ -9,6 +9,9 @@ const MainHeader = () => {
                     I'm a placeholder for more text which will describe the person behind the site.
                 </p>
             </div>
+            <div className="down-arrow">
+                <span>^</span>
+            </div>
         </div>
     );
 }
