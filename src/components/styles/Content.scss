@@ -1,22 +1,30 @@
 #content {
     margin: 0 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 #journal {
     border: 2px solid black;
     background-color: #F8ECC2;
+    margin-bottom: 20px;
 }
 
 .content-container {
     padding: 20px;
     h3 {
         margin: 0;
+        align-self: flex-start;
+    }
+    .date {
+        align-self: flex-end;
     }
 }
 .journal {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 0;
 }
 .journal-content {
     padding-left: 20px;

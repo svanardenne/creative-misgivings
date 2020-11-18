@@ -9,14 +9,13 @@
         display: block;
     }
     #content {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     #journal,
     #upcoming {
-        flex-basis: 45%;
+        flex-basis: 49%;
     }
     #new-content {
         flex-basis: 100%;
@@ -55,5 +54,11 @@
     #upcoming,
     #new-content {
         flex-basis: 33%;
+        margin-bottom: 0;
+    }
+}
+.contact {
+    h3 {
+        margin-top: 50px;
     }
 }
