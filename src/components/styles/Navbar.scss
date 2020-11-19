@@ -19,6 +19,12 @@
     padding: 0 10px;
 }
 
+.nav-toggle {
+    svg {
+        width: 30px;
+    }
+}
+
 .dropdown {
     display: none;
     text-align: right;

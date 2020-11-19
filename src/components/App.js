@@ -56,12 +56,14 @@ class App extends Component {
     //Toggles navbar style on scroll
     document.addEventListener('scroll', () => {
       const navbar = document.querySelector('.nav-container');
+      const toggleFill = document.querySelector('.toggle-fill');
       const mobileLinks = document.getElementsByClassName('nav-link');
       const desktopNavItems = document.getElementsByClassName('nav-item');
       const desktopLinks = document.getElementsByClassName('desktop-nav-link');
       if (window.pageYOffset > 0) {
-        navbar.style.backgroundColor = '#f5f5f5';
+        navbar.style.backgroundColor = 'white';
         navbar.style.color = 'black';
+        toggleFill.setAttribute('fill', '#000000');
         for (let i = 0; i < mobileLinks.length; i++) {
           mobileLinks[i].style.color = 'black';
         }
@@ -72,6 +74,7 @@ class App extends Component {
       } else if (window.pageYOffset === 0) {
         navbar.style.backgroundColor = '';
         navbar.style.color = 'white';
+        toggleFill.setAttribute('fill', '#FFFFFF');
         for (let i = 0; i < mobileLinks.length; i++) {
           mobileLinks[i].style.color = 'white';
         }
