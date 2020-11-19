@@ -14,3 +14,12 @@
     align-items: center;
     padding: 0 5px;
 }
+.down-arrow {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    span {
+        font-size: 4em;
+    }
+}
