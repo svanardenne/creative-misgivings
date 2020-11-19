@@ -60,7 +60,7 @@ class App extends Component {
       const desktopNavItems = document.getElementsByClassName('nav-item');
       const desktopLinks = document.getElementsByClassName('desktop-nav-link');
       if (window.pageYOffset > 0) {
-        navbar.style.backgroundColor = 'white';
+        navbar.style.backgroundColor = '#f5f5f5';
         navbar.style.color = 'black';
         for (let i = 0; i < mobileLinks.length; i++) {
           mobileLinks[i].style.color = 'black';
