@@ -4,9 +4,9 @@ const MainHeader = () => {
     return(
         <div className="jumbotron">
             <div className="headline">
-                <h1>Hello!</h1>
+                <h1>Creative Misgivings</h1>
                 <p>
-                    I'm a placeholder for more text which will describe the person behind the site.
+                Strive to Create... When You are Full of Doubts
                 </p>
             </div>
             <div className="down-arrow">
