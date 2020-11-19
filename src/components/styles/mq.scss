@@ -8,9 +8,6 @@
     .desktop-nav {
         display: block;
     }
-    .jumbotron {
-        height: 600px;
-    }
     #content {
         flex-direction: row;
         flex-wrap: wrap;
@@ -26,15 +23,6 @@
 }
 
 @media(min-width: 1024px) {
-    .jumbotron {
-        height: 800px;
-        h1 {
-            font-size: 4em;
-        }
-        p {
-            font-size: 2em;
-        }
-    }
     .nav-container {
         display: flex;
         justify-content: space-between;
@@ -58,8 +46,5 @@
     #upcoming,
     #new-content {
         flex-basis: 33%;
-    }
-    #content {
-        margin-bottom: 30px;
     }
 }

@@ -9,17 +9,15 @@ html {
 }
 
 body {
-    background-color: $secondary;
+    background-color: $background;
     color: $light-text;
 }
 
 #root {
     background-color: white;
     margin: 0 auto;
-    min-height: 100vh;
-    max-width: 1440px;
+    max-width: 1800px;
     box-shadow: 1px 1px 40px 1px black;
-    margin-bottom: 50px;
 }
 
 a {

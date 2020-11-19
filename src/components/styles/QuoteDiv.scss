@@ -1,10 +1,10 @@
 .quote-container {
     text-align: center;
-    color: white;
+    color: $dark-blue;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-bottom: 50px;
-    background-color: $primary;
+    background-color: $off-white;
+    border-bottom: 3px solid $dark-blue;
     h2 {
         margin: 0;
     }
