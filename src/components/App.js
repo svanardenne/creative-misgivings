@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './styles/App.scss';
 import MainNav from './Navbar';
 import MainHeader from './MainHeader';
 import QuoteDiv from './QuoteDiv';
