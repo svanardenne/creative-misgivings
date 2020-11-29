@@ -20,10 +20,12 @@ class App extends Component {
           <section id="quote-div">
             <QuoteDiv />
           </section>
-          <section id="content">
-            <Journal />
-            <Upcoming />
-            <New />
+          <section id="content" className="content">
+            <div className="card-content">
+              <Journal />
+              <Upcoming />
+              <New />
+            </div>
           </section>
           <section id="signup">
 

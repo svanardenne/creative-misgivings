@@ -7,7 +7,7 @@ const MainNav = () => {
                 <h3 className="nav-title">Creative Misgivings</h3>
                 <div className="nav-toggle">
                     <svg viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg" >
-                    <g className="toggle-fill" fill="#f5f5f5" fill-rule="evenodd" stroke="#000" stroke-opacity=".85981" stroke-width="1.3229">
+                    <g className="toggle-fill" fill="#f5f5f5" fillRule="evenodd" stroke="#000" strokeOpacity=".85981" strokeWidth="1.3229">
                         <rect x="25.702" y="99.083" width="157.24" height="13.607" ry="6.8036"/>
                         <rect x="25.702" y="176.89" width="157.24" height="13.607" ry="6.8036"/>
                         <rect x="24.946" y="138.61" width="157.24" height="13.607" ry="6.8036"/>
